@@ -51,8 +51,21 @@ body {
   }
 }
 
-.carte_postale {
+.container_previews {
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  width: calc(100% - 2.5rem);
+  height: calc(420px - 1rem);
+}
+
+.img_previews {
   position: relative;
+  height: 420px;
+  width: calc(100% - 2.5rem);
+}
+
+.carte_postale {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   display: flex;
@@ -61,6 +74,7 @@ body {
   margin-bottom: 1rem;
 
   img {
+    overflow: hidden;
     border-radius: 10px;
     width: auto;
     padding: 5px;
@@ -99,6 +113,7 @@ button {
 }
 
 .card {
+  position: relative;
   background-color: #fff;
   padding: 1rem;
   border-radius: 10px;
@@ -124,4 +139,22 @@ main {
 
 .img_card {
   position: relative;
+}
+
+.container_text {
+  position: absolute;
+  text-align: center;
+  color: white;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  background: rgba(150, 150, 150, 0.42);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.8px);
+  -webkit-backdrop-filter: blur(10.8px);
+  border: 1px solid rgba(150, 150, 150, 0.46);
+  z-index: 10;
 }
