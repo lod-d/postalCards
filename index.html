@@ -5,55 +5,75 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="stylesheet" href="./src/style.css" />
   </head>
-  <body>
+  <body class="container_column">
     <header>
       <h1>🏝️ Créateur de carte postale</h1>
       <p>cliquez sur un éléments pour l'ajouter à votre carte postale</p>
     </header>
     <main>
       <!-- div stickers -->
-      <div class="container_column">
+      <div class="container_column stickers">
         <h2>Élements Décoratifs</h2>
         <div class="wrapper_stickers">
           <div class="container_sticker">
-            <img src="" alt="" />
+            <img src="./src/images/barbuc.png" alt="barbuc" />
           </div>
           <div class="container_sticker">
-            <img src="" alt="" />
+            <img
+              src="./src/images/canard-autop.png"
+              alt="canard qui n'est pas un canard"
+            />
           </div>
           <div class="container_sticker">
-            <img src="" alt="" />
+            <img src="./src/images/glace.png" alt="glace gout sourire" />
           </div>
           <div class="container_sticker">
-            <img src="" alt="" />
+            <img
+              src="./src/images/lunette.png"
+              alt="juste des lunettes pas rayban"
+            />
           </div>
           <div class="container_sticker">
-            <img src="" alt="" />
+            <img
+              src="./src/images/palmier.png"
+              alt="palmier ohé ohé, il danse il danse mon palmier"
+            />
           </div>
           <div class="container_sticker">
-            <img src="" alt="" />
+            <img
+              src="./src/images/parasol.png"
+              alt="Des vacances sans parasol c'est comme un apéro avec apérol"
+            />
           </div>
           <div class="container_sticker">
-            <img src="" alt="" />
+            <img src="./src/images/soleil.png" alt="vacances de soleil" />
           </div>
           <div class="container_sticker">
-            <img src="" alt="" />
+            <img
+              src="./src/images/vachette.png"
+              alt="Costume de la vachette d'interville presque comme le vrais !"
+            />
           </div>
         </div>
         <button>Tout Effacer</button>
-        <p>0 éléments(s) sur la carte</p>
+        <p class="count">0 éléments(s) sur la carte</p>
       </div>
 
       <!-- div carte postale -->
-      <div class="container_column">
-        <div>
-          <img src="" alt="" />
-          <p>
-            Cliquez sur un élément pour l'ajouter - Cliquez sur un élément placé
-            pour le retirer
-          </p>
+      <div class="container_column card">
+        <div class="carte_postale">
+          <img
+            class="bg_img_card"
+            src="./src/images/image-bg.png"
+            alt="image de fond de mes fausse vacances"
+          />
         </div>
+        <p>
+          Cliquez sur un élément pour l'ajouter - Cliquez sur un élément placé
+          pour le retirer
+        </p>
       </div>
     </main>
     <script type="module" src="/src/main.js"></script>

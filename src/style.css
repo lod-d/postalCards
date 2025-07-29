@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  margin: 1rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #c0e7f3;
+}
+
+.container_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper_stickers {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container_sticker {
+  background-color: #fff;
+  border: 1px solid rgb(204, 204, 204);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 150px;
+  height: 80px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 5px;
+
+  img {
+    width: 100px;
+    height: 100%;
+    object-fit: contain;
+    margin: 1rem;
+    cursor: pointer;
+  }
+}
+
+.carte_postale {
+  position: relative;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  img {
+    border-radius: 10px;
+    width: auto;
+    padding: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.505);
+    max-width: 650px;
+    height: 100%;
+    background-color: #fff;
+  }
+}
+
+/* button style */
+
+button {
+  background-color: tomato;
+  border: 1px solid tomato;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  width: 100%;
+  min-height: 2rem;
+  color: white;
+}
+
+/* styled Global container */
+
+/*  stickes container style  */
+.stickers {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+  height: 100%;
+  min-height: 500px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+  height: 100%;
+  min-height: 500px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  margin-top: 2rem;
+}
+
+/* part of Js position */
+
+.active_sticker {
+  border: 1px solid tomato;
+}
+
+.img_card {
+  position: relative;
+}
