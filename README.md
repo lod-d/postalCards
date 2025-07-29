@@ -51,6 +51,7 @@ Utilisation
 
 Structure du projet
 
+```
 postalCards/
 ├── index.html
 └── src/
@@ -69,6 +70,7 @@ postalCards/
 	•	main.js : logique JavaScript (ajout, suppression, comptage, position aléatoire)
 	•	style.css : styles pour la mise en page
 	•	images/ : les stickers et l’image de fond
+```
 
 ⸻
 
